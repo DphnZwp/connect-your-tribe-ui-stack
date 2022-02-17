@@ -12,6 +12,7 @@ Een visitekaartje met verschillende states en het heeft minder informatie dan he
 ## Code 
 <!-- Leg de code uit die je gebruikt om de verschillende states van de UI-Stack te tonen -->
 
+## Wiki
 
 ## Licentie
 
