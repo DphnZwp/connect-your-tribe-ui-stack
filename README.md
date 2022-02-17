@@ -13,6 +13,7 @@ Een visitekaartje met verschillende states en het heeft minder informatie dan he
 <!-- Leg de code uit die je gebruikt om de verschillende states van de UI-Stack te tonen -->
 
 ## Wiki
+Bekijk de [wiki](https://github.com/DphnZwp/connect-your-tribe-ui-stack/wiki) voor informatie over mijn proces.
 
 ## Licentie
 
