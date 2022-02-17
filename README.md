@@ -4,6 +4,7 @@
 Een visitekaartje met verschillende states.
 
 ## Wireflow
+Toen ik mijn visitekaartje van deze sprint bekeek ben ik erachter gekomen dat het visitekaartje veel informatie heeft. Daarom wou ik voor deze opdracht een nieuw visitekaartje maken met minder informatie.
 <!-- Toon de wireflow -->
 
 ## Breakdown
@@ -11,9 +12,6 @@ Een visitekaartje met verschillende states.
 
 ## Code 
 <!-- Leg de code uit die je gebruikt om de verschillende states van de UI-Stack te tonen -->
-
-## Wiki
-Bekijk de [wiki](https://github.com/DphnZwp/connect-your-tribe-ui-stack/wiki) voor informatie over mijn proces.
 
 ## Licentie
 
