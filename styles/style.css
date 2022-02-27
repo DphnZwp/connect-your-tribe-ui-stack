@@ -7,6 +7,18 @@
 	--black: #000;
 }
 
+@font-face {
+	font-family: 'BloggerSans';
+	src: url('../assets/fonts/BloggerSans.woff');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'BloggerSans-Bold';
+	src: url('../assets/fonts/BloggerSans-Bold.woff');
+	font-weight: 700;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -16,7 +28,7 @@
 }
 
 body {
-	font-family: Kelson Sans, sans-serif;
+	font-family: 'BloggerSans', sans-serif;
 	display: flex;
   justify-content: center;
   align-items: center;
@@ -32,7 +44,8 @@ p {
 
 h1 {
 	font-weight: 700;
-	font-size: 6.25rem;
+	font-size: 4rem;
+	text-align: center;
 }
 
 h2 {
@@ -50,4 +63,10 @@ p {
   font-weight: 400;
 	font-size: 1rem;
 	line-height: 1.6;
+}
+
+/* EMPTY STATE */
+
+.daphne-sad {
+	width: 25%;
 }

@@ -1,5 +1,5 @@
 const display = document.querySelector('section')
-display.textContent = "Laden van visitekaartje, even geduld a.u.b"
+display.textContent = "Laden van het visitekaartje, even geduld a.u.b"
 const nameEl = document.getElementById('name')
 const frontendTitle = document.getElementById('frontend-title')
 const githubEl = document.getElementById("github")
