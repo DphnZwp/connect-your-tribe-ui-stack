@@ -1,21 +1,23 @@
 // Empty state
-const display = document.querySelector('.dissapear')
-display.style.display = "none";
+const display = document.querySelector('.empty-state')
+display.style.display = 'none';
 // Loading state
-const preLoaderWrapper = document.querySelector(".preloader-wrapper");
+const preLoaderWrapper = document.querySelector('.preloader-wrapper')
 // Business card ids
 const nameEl = document.getElementById('name')
 const frontendTitle = document.getElementById('frontend-title')
 const githubEl = document.getElementById("github")
 const bioEl = document.getElementById('bio')
-const avatar = document.getElementById("avatar")
-const imagePig = document.getElementById("daphne-pig")
-imagePig.src = 'assets/daphne-pig.png';
+const avatar = document.getElementById('avatar')
+const imagePig = document.querySelector('.daphne-pig')
+imagePig.src = 'assets/daphne-pig.png'
+const businessCard = document.querySelector('.business-card')
+businessCard.style.opacity = '0';
 
-
-fetch("https://tribe.api.fdnd.nl/v1/member")
+fetch('https://tribe.api.fdnd.nl/v1/member')
 .then(response=> {
-	preLoaderWrapper.classList.add("hide");
+	preLoaderWrapper.classList.add('hide')
+	businessCard.style.opacity = '100%';
 	return response.json()
 })
 .then (json => {

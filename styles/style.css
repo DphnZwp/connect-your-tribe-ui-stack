@@ -29,9 +29,6 @@
 
 body {
 	font-family: 'BloggerSans', sans-serif;
-	display: flex;
-  justify-content: center;
-  align-items: center;
 	background-color: var(--light-blue);
 }
 
@@ -70,14 +67,18 @@ a {
 }
 
 .business-card {
-	margin: 5em 8em;
+	margin: 0;
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(1, 1fr);
 }
 
 .information {
 	padding: 2em;
 	background-color: var(--dark-blue);
+}
+
+.information>p {
+	width: 25em;
 }
 
 .information>h2, 
@@ -87,7 +88,7 @@ a {
 	color: var(--white);
 }
 
-#daphne-pig {
+.daphne-pig {
 	margin: 2em auto;
 	display: block;
 	width: 15em;
@@ -114,9 +115,22 @@ a {
 /* LOADING STATE */
 
 .preloader-wrapper {
+	top: 2em;
+	left: 50%;
+  transform: translate(-50%, -50%);
+	width: max-content;
+	position: absolute;
 	display: block;
 }
 
 .hide {
 	display: none;
+}
+
+@media (min-width:70em) {
+	.business-card {
+		margin: 5em 8em;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
 }

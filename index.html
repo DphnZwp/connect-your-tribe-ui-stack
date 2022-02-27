@@ -11,13 +11,14 @@
 <body>
 	<main>
 		<!-- EMPTY STATE -->
-    <section class="dissapear">
+    <section class="empty-state">
 			<h1>Er is nog niets geladen...</h1> 
 			<h2>Zet JavaScript aan en probeer opnieuw.</h2>
 			<img class="daphne-sad" src="assets/daphne-sad.svg" alt="">
 		</section>
+		<!-- LOADING STATE -->
 		<section class="preloader-wrapper">
-			<h2 class="preloader">Laden van het visitekaartje, even geduld a.u.b</h2>
+			<h2 class="preloader">Aan het laden...</h2>
 		</section>
 		<!-- DATA FROM API -->
 		<section class="business-card">
@@ -27,7 +28,7 @@
 				<a id="github" href="https://github.com/DphnZwp" target="_blank"></a>
 				<h3 id="bio-title"></h3>
 				<p id="bio"></p>
-				<img id="daphne-pig" alt="">
+				<img class="daphne-pig" alt="">
 			</article>
 			<article class="illustration">
 				<img id="avatar" alt="">
