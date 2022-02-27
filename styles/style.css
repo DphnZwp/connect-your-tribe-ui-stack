@@ -88,7 +88,7 @@ a {
 	color: var(--white);
 }
 
-.daphne-pig {
+.image-pig {
 	margin: 2em auto;
 	display: block;
 	width: 15em;
@@ -115,7 +115,7 @@ a {
 /* LOADING STATE */
 
 .preloader-wrapper {
-	top: 2em;
+	top: 3em;
 	left: 50%;
   transform: translate(-50%, -50%);
 	width: max-content;
@@ -125,6 +125,14 @@ a {
 
 .hide {
 	display: none;
+}
+
+.image-loading {
+	position: absolute;
+	margin-top: 18em;
+	left: 50%;
+  transform: translate(-50%, -50%);
+	width: 80%;
 }
 
 @media (min-width:70em) {
