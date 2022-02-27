@@ -70,7 +70,7 @@ a {
 }
 
 .business-card {
-	margin: 5em 8em 0 8em;
+	margin: 5em 8em;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 }
