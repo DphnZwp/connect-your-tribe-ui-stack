@@ -32,6 +32,7 @@ body {
 	display: flex;
   justify-content: center;
   align-items: center;
+	background-color: var(--light-blue);
 }
 
 h1,
@@ -62,11 +63,60 @@ h3 {
 p {
   font-weight: 400;
 	font-size: 1rem;
-	line-height: 1.6;
+	line-height: 1.4;
+}
+a {
+	line-height: 2.5;
+}
+
+.business-card {
+	margin: 5em 8em 0 8em;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.information {
+	padding: 2em;
+	background-color: var(--dark-blue);
+}
+
+.information>h2, 
+.information>h3,
+.information>p,
+.information>a {
+	color: var(--white);
+}
+
+#daphne-pig {
+	margin: 2em auto;
+	display: block;
+	width: 15em;
+}
+
+.illustration {
+	background-color: var(--white);
+}
+
+#avatar {
+	margin: 2em auto 0 auto;
+	display: block;
+	width: 60%;
 }
 
 /* EMPTY STATE */
 
 .daphne-sad {
+	margin: 0 auto;
+	display: block;
 	width: 25%;
+}
+
+/* LOADING STATE */
+
+.preloader-wrapper {
+	display: block;
+}
+
+.hide {
+	display: none;
 }

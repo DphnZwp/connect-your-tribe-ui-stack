@@ -1,14 +1,21 @@
-const display = document.querySelector('section')
-display.textContent = "Laden van het visitekaartje, even geduld a.u.b"
+// Empty state
+const display = document.querySelector('.dissapear')
+display.style.display = "none";
+// Loading state
+const preLoaderWrapper = document.querySelector(".preloader-wrapper");
+// Business card ids
 const nameEl = document.getElementById('name')
 const frontendTitle = document.getElementById('frontend-title')
 const githubEl = document.getElementById("github")
 const bioEl = document.getElementById('bio')
-const image = document.getElementById("image")
+const avatar = document.getElementById("avatar")
+const imagePig = document.getElementById("daphne-pig")
+imagePig.src = 'assets/daphne-pig.png';
+
 
 fetch("https://tribe.api.fdnd.nl/v1/member")
 .then(response=> {
-	display.textContent=""
+	preLoaderWrapper.classList.add("hide");
 	return response.json()
 })
 .then (json => {
@@ -18,5 +25,5 @@ fetch("https://tribe.api.fdnd.nl/v1/member")
 	frontendTitle.innerText = `Frontend Developer`
 	githubEl.innerText = `${data.githubHandle}`
 	bioEl.innerText = `${data.bio}`
-	image.src = `${data.avatar}`
+	avatar.src = `${data.avatar}`
 });

@@ -11,21 +11,27 @@
 <body>
 	<main>
 		<!-- EMPTY STATE -->
-    <section>
+    <section class="dissapear">
 			<h1>Er is nog niets geladen...</h1> 
 			<h2>Zet JavaScript aan en probeer opnieuw.</h2>
 			<img class="daphne-sad" src="assets/daphne-sad.svg" alt="">
 		</section>
+		<section class="preloader-wrapper">
+			<h2 class="preloader">Laden van het visitekaartje, even geduld a.u.b</h2>
+		</section>
 		<!-- DATA FROM API -->
-		<section class="information">
+		<section class="business-card">
+			<article class="information">
 				<h2 id="name"></h2>
 				<h3 id="frontend-title"></h3>
 				<a id="github" href="https://github.com/DphnZwp" target="_blank"></a>
 				<h3 id="bio-title"></h3>
 				<p id="bio"></p>
-		</section>
-		<section class="illustration">
-				<img id="image" alt="">
+				<img id="daphne-pig" alt="">
+			</article>
+			<article class="illustration">
+				<img id="avatar" alt="">
+			</article>
 		</section>
 	</main>
     <script src="scripts/main.js"></script>
