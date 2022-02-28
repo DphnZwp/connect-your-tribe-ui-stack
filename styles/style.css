@@ -70,6 +70,7 @@ a {
 	margin: 0;
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
+	opacity: 0;
 }
 
 .information {
@@ -106,10 +107,19 @@ a {
 
 /* EMPTY STATE */
 
+.empty-state {
+	margin-top: 2em;
+	text-align: center;
+}
+
+.empty-state>h2 {
+	line-height: 1.5;
+}
+
 .daphne-sad {
-	margin: 0 auto;
+	margin: 2em auto 0 auto;
 	display: block;
-	width: 25%;
+	width: 20%;
 }
 
 /* LOADING STATE */
@@ -120,10 +130,6 @@ a {
   transform: translate(-50%, -50%);
 	width: max-content;
 	position: absolute;
-	display: block;
-}
-
-.hide {
 	display: none;
 }
 

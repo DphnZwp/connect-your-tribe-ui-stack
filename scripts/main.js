@@ -3,6 +3,7 @@ const display = document.querySelector('.empty-state')
 display.style.display = 'none';
 // Loading state
 const preLoaderWrapper = document.querySelector('.preloader-wrapper')
+preLoaderWrapper.style.display = "block"
 // Business card ids
 const nameEl = document.getElementById('name')
 const frontendTitle = document.getElementById('frontend-title')
@@ -16,7 +17,7 @@ businessCard.style.opacity = '0';
 
 fetch('https://tribe.api.fdnd.nl/v1/member')
 .then(response=> {
-	preLoaderWrapper.classList.add('hide')
+	preLoaderWrapper.style.display = "none"
 	businessCard.style.opacity = '100%';
 	return response.json()
 })
