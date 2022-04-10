@@ -11,29 +11,23 @@
 <body>
 	<main>
 		<!-- EMPTY STATE -->
-    <section class="empty-state">
+		<section class="empty-state">
 			<h1>Er is nog niets geladen...</h1> 
 			<h2>Zet JavaScript aan en laad de website opnieuw.</h2>
 			<img class="daphne-sad" src="assets/daphne-sad.svg" alt="">
 		</section>
 		<!-- LOADING STATE -->
-		<section class="preloader-wrapper">
-			<h2 class="preloader">Aan het laden...</h2>
-			<img class="image-loading" src="assets/daphne-loading.png" alt="">
+		<section class="loading-state">
+			<h2>Aan het laden...</h2>
+			<img src="assets/daphne-loading.png" alt=""></img>
+		</section>
+		<!-- ERROR STATE -->
+		<section class="error-state">
+			<h2>Er is een foutmelding in de website!</h2>
+			<img class="daphne-sad" src="assets/daphne-sad.svg" alt="">
 		</section>
 		<!-- DATA FROM API -->
 		<section class="business-card">
-			<article class="information">
-				<h2 id="name"></h2>
-				<h3 id="frontend-title"></h3>
-				<a id="github" href="https://github.com/DphnZwp" target="_blank"></a>
-				<h3 id="bio-title"></h3>
-				<p id="bio"></p>
-				<img class="image-pig" alt="">
-			</article>
-			<article class="illustration">
-				<img id="avatar" alt="">
-			</article>
 		</section>
 	</main>
     <script src="scripts/main.js"></script>

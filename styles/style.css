@@ -29,7 +29,13 @@
 
 body {
 	font-family: 'BloggerSans', sans-serif;
+	color: var(--white);
 	background-color: var(--light-blue);
+}
+
+main {
+	display: grid;
+	place-items: center;
 }
 
 h1,
@@ -47,12 +53,14 @@ h1 {
 }
 
 h2 {
+	margin-bottom: 0.2em;
   font-weight: 700;
 	font-size: 3.125rem;
 	line-height: 1.1;
 }
 
 h3 {
+	margin-top: 0.5em;
   font-weight: 700;
   font-size: 1.563rem;
 }
@@ -60,90 +68,111 @@ h3 {
 p {
   font-weight: 400;
 	font-size: 1rem;
-	line-height: 1.4;
+	line-height: 1.5;
 }
+
 a {
+	color: var(--white);
 	line-height: 2.5;
 }
 
-.business-card {
-	margin: 0;
+.empty-state {
+	margin-top: 2em;
 	display: grid;
-	grid-template-columns: repeat(1, 1fr);
-	opacity: 0;
+  place-items: center;
 }
 
-.information {
-	padding: 2em;
-	background-color: var(--dark-blue);
+.empty-state.empty-dissapear {
+	display: none;
 }
 
-.information>p {
-	width: 25em;
+.empty-state>h1,
+.empty-state>h2 {
+	color: var(--black);
 }
 
-.information>h2, 
-.information>h3,
-.information>p,
-.information>a {
-	color: var(--white);
+.empty-state>h1 {
+	margin-bottom: 0.3em;
 }
 
-.image-pig {
-	margin: 2em auto;
-	display: block;
+.empty-state>img {
+	margin-top: 1.5em;
 	width: 15em;
 }
 
+.loading-state {
+  display: none;
+}
+
+.loading-state.loading-show {
+	margin-top: 2em;
+	display: grid;
+  place-items: center;
+}
+
+.loading-state>h2 {
+	color: var(--black);
+}
+
+.loading-state>img {
+	margin-top: 1.5em;
+	width: 15em;
+}
+
+.error-state {
+	display: none;
+}
+
+.error-state.error-show {
+	margin-top: 2em;
+	display: grid;
+  place-items: center;
+}
+
+.error-state>h2 {
+	color: var(--black);
+}
+
+.error-state>img {
+	margin-top: 1.5em;
+	width: 15em;
+}
+
+
+.information {
+	padding: 3em;
+	background-color: var(--dark-blue);
+}
+
 .illustration {
+	padding: 2em;
 	background-color: var(--white);
 }
 
-#avatar {
-	margin: 2em auto 0 auto;
+.image-pig {
+	margin: 3em auto 0 auto;
+	width: 15em;
+}
+
+.image-avatar {
+	width: 30em;
+}
+
+img {
 	display: block;
-	width: 60%;
 }
 
 /* EMPTY STATE */
 
-.empty-state {
-	margin-top: 2em;
-	text-align: center;
-}
-
-.empty-state>h2 {
-	line-height: 1.5;
-}
-
-.daphne-sad {
-	margin: 2em auto 0 auto;
-	display: block;
-	width: 20%;
-}
 
 /* LOADING STATE */
 
-.preloader-wrapper {
-	top: 3em;
-	left: 50%;
-  transform: translate(-50%, -50%);
-	width: max-content;
-	position: absolute;
-	display: none;
-}
 
-.image-loading {
-	position: absolute;
-	margin-top: 18em;
-	left: 50%;
-  transform: translate(-50%, -50%);
-	width: 80%;
-}
 
 @media (min-width:70em) {
 	.business-card {
-		margin: 5em 8em;
+		margin: 4em 0;
+		width: min-content;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 	}
