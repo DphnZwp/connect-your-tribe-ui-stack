@@ -36,8 +36,8 @@ async function renderMembers() {
         businessCardData.insertAdjacentHTML('beforeend',
             `
 						<section class="information">
-							<h2>${member.name} ${member.prefix} ${member.surname}</h2>
-							<h3>Frontend Developer</h3>
+							<h1>${member.name} ${member.prefix} ${member.surname}</h1>
+							<h2>Frontend Developer</h2>
 							<a href="${member.githubHandle}" target="_blank">${member.githubHandle}</a>
 							<h3>Bio</h3>
 							<p>${member.bio}</p>
