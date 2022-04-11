@@ -12,7 +12,7 @@ Toen ik mijn visitekaartje van deze sprint bekeek ben ik erachter gekomen dat he
 ![IMG_1406](https://user-images.githubusercontent.com/69635977/160109437-2e90cd8b-1c07-4d58-a3bf-847b8b9d8a55.jpg)
 
 ## Breakdown
-<!-- Toon de breakdown schets -->
+![IMG_1447](https://user-images.githubusercontent.com/69635977/162714242-afb6acc0-47a5-45b1-a3b4-04d5062a979f.jpg)
 
 ## Code 
 <!-- Leg de code uit die je gebruikt om de verschillende states van de UI-Stack te tonen -->
