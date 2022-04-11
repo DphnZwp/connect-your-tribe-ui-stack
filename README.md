@@ -55,17 +55,17 @@ async function renderMembers() {
         // Create a HTML business card
         businessCardData.insertAdjacentHTML('beforeend',
             `
-						<section class="information">
-							<h1>${member.name} ${member.prefix} ${member.surname}</h1>
-							<h2>Frontend Developer</h2>
-							<a href="${member.githubHandle}" target="_blank">${member.githubHandle}</a>
-							<h3>Bio</h3>
-							<p>${member.bio}</p>
-							<img class="image-pig" src="assets/daphne-pig.png">
-						</section>
-						<section class="illustration">
-							<img class="image-avatar" src="${member.avatar}" alt="">
-						</section>
+		<section class="information">
+			<h1>${member.name} ${member.prefix} ${member.surname}</h1>
+			<h2>Frontend Developer</h2>
+			<a href="${member.githubHandle}" target="_blank">${member.githubHandle}</a>
+			<h3>Bio</h3>
+			<p>${member.bio}</p>
+			<img class="image-pig" src="assets/daphne-pig.png">
+		</section>
+		<section class="illustration">
+			<img class="image-avatar" src="${member.avatar}" alt="">
+		</section>
         `
         )
     })
